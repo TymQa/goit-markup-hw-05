@@ -234,6 +234,26 @@ span {
     padding: 15px;
 
     background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.order-modal-close {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--color-corn);
+    border-radius: 50%;
+
+    fill: var(--color-background-main);
+    background-image: url(../images/modal-close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    padding: 8px;
+    margin-left: 360px;
+    cursor: pointer;
+}
+
+.order-modal-icon {
 }
 
 /* order */
