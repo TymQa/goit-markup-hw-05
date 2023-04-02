@@ -100,6 +100,8 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-background-main);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:is(:hover, :focus) {
@@ -123,7 +125,9 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--color-main);   
+    color: var(--color-main);
+    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-itm:is(:hover, :focus) {
@@ -191,6 +195,7 @@ span {
     border: none;
     text-align: center;
     margin-top: 48px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     background-color: var(--color-iris);
     font-family: "Roboto", sans-serif;
@@ -215,7 +220,10 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(46, 47, 66, 0.4);
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
 }
 
 .backdrop.is-hidden {
@@ -227,11 +235,10 @@ span {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
 
     min-height: 576px;
     min-width: 408px;
-    padding: 15px;
 
     background-color: #ffffff;
     border-radius: 4px;
@@ -246,16 +253,21 @@ span {
     background-image: url(../images/modal-close.svg);
     background-repeat: no-repeat;
     background-position: center;
+    width: 24px;
+    height: 24px;
 
+    position: absolute;
     display: flex;
-    padding: 8px;
-    margin-left: 360px;
     cursor: pointer;
+    margin-left: 360px;
+    margin-top: 24px;
+    margin-right: 24px;
 }
 
-.order-modal-icon {
-}
 
+.vector-one {
+    
+}
 /* order */
 
 /* features */
@@ -413,6 +425,7 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
     justify-content: center;
     gap: 24px;
+    
 }
 
 .icon-list-item {
@@ -426,6 +439,8 @@ border-radius: 0px 0px 4px 4px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--color-iris);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-link:is(:hover, :focus) {
@@ -434,6 +449,7 @@ border-radius: 0px 0px 4px 4px;
 
 .link-icon {
     fill: var(--color-cloud);
+    
 }
 
 /* team */
@@ -457,10 +473,12 @@ border-radius: 0px 0px 4px 4px;
 .customers-list {
     display: flex;
     gap: 24px;
+    
 }
 
 .customers-item {
     width: calc((100% - 120px) / 6);
+    
 }
 
 .customers-link {
@@ -469,6 +487,7 @@ border-radius: 0px 0px 4px 4px;
     justify-content: center;
     height: 88px;
     
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     fill: var(--color-light-gray);
     border-radius: 4px;
@@ -482,6 +501,7 @@ border-radius: 0px 0px 4px 4px;
 .customers-link:is(:hover, :focus) {
     border: 1px solid var(--color-background-btn);
     fill: var(--color-background-btn);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Customers */
@@ -553,6 +573,8 @@ border-radius: 0px 0px 4px 4px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--color-iris);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-link:is(:hover, :focus) {
@@ -591,7 +613,7 @@ border-radius: 0px 0px 4px 4px;
     border-radius: 4px;
     background-color: var(--color-cloud);
     padding: 12px 24px;
-    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
